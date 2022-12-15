@@ -30,6 +30,15 @@ a{
         border-bottom: 1px dotted;
     }
 }
+#btn{
+    border: 1px solid $blue;
+    background-image: linear-gradient(to right bottom, #0dcaf0, #3dd5f3, #59dff7, #71eafb, #86f4ff);
+    transition: all ease-in 400ms;
+    &:hover{
+        transition-timing-function: ease-in-out;
+        box-shadow: 0 0 10px $blue;
+    }
+}
 #wrap{
     video{
         z-index: -1;

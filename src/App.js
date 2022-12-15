@@ -16,7 +16,7 @@ function App() {
   return (
     <div id="wrap" className="d-flex justify-content-center align-items-center container mx-auto min-vh-100">
       <Video />
-      <form onSubmit={sendForm} className="p-4 bg-dark text-light rounded position-relative">
+      <form onSubmit={sendForm} className="p-5 bg-dark text-light rounded position-relative">
         <img src={logo} alt="Logo Tec" className="d-block m-auto mb-3" width="70" />
         <h1 className="fw-normal text-center mb-2">Sign in</h1>
         <p className="fw-light text-center mb-3">Ingresa tu email o usuario<br />y contraseña</p>
@@ -34,7 +34,7 @@ function App() {
           setValue={setPassword} />
 
           { password === '252525' ? 
-            <button className="btn btn-lg btn-success w-100 fw-light mt-2">ENTRAR</button> : 
+            <button id="btn" className="btn btn-lg w-100 fw-bold text-dark mt-2">ENTRAR</button> : 
             null 
           }
 
