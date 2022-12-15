@@ -1,7 +1,7 @@
 const Input = ({ name, placeholder, label, setValue, type = 'text' }) => {
     return(
         <div className="mb-3">
-            <label form={'input-' + name} className="small">{label}</label>
+            <label for={'input-' + name} className="small">{label}</label>
             <input onChange={(e) => {
                 setValue(e.target.value)
             }}

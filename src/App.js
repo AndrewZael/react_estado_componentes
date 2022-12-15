@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <div id="wrap" className="d-flex justify-content-center align-items-center container mx-auto min-vh-100">
+    <main id="wrap" className="d-flex justify-content-center align-items-center container mx-auto min-vh-100">
       <Video />
       <form onSubmit={sendForm} className="p-5 bg-dark text-light rounded position-relative">
         <img src={logo} alt="Logo Tec" className="d-block m-auto mb-3" width="70" />
@@ -44,7 +44,7 @@ function App() {
           </div>
 
       </form>
-    </div>
+    </main>
   );
 }
 
