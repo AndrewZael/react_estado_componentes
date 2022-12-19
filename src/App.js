@@ -3,7 +3,7 @@ import { useState } from "react";
 import Video from "./componentes/video";
 import logo from './assets/img/logo.png';
 import './assets/css/style.scss';
-import Brand from "./componentes/Brand";
+import HeaderLogin from "./componentes/HeaderLogin";
 import FooterLogin from "./componentes/FooterLogin";
 import Button from "./componentes/Button";
 
@@ -20,7 +20,7 @@ function App() {
     <main id="wrap" className="d-flex justify-content-center align-items-center container mx-auto min-vh-100">
       <Video />
       <form onSubmit={sendForm} className="p-5 bg-dark text-light rounded position-relative">
-        <Brand logo={logo} />
+        <HeaderLogin logo={logo} />
         <Input 
           name="user" 
           label="Usuario o Email" 
