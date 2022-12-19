@@ -1,11 +1,11 @@
-import Input from "./componentes/Input";
 import { useState } from "react";
 import Video from "./componentes/video";
+import Input from "./componentes/Input";
 import logo from './assets/img/logo.png';
-import './assets/css/style.scss';
 import HeaderLogin from "./componentes/HeaderLogin";
-import FooterLogin from "./componentes/FooterLogin";
 import Button from "./componentes/Button";
+import FooterLogin from "./componentes/FooterLogin";
+import './assets/css/style.scss';
 
 function App() {
   const [user, setUser] = useState('');
