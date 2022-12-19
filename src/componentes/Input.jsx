@@ -1,10 +1,8 @@
 const Input = ({ name, placeholder, label, setValue, type = 'text' }) => {
     return(
         <div className="mb-3">
-            <label for={'input-' + name} className="small">{label}</label>
-            <input onChange={(e) => {
-                setValue(e.target.value)
-            }}
+            <label htmlFor={'input-' + name} className="small">{label}</label>
+            <input onChange={(e) => {setValue(e.target.value)}}
                 id={'input-' + name} 
                 type={type}
                 name={name} 
